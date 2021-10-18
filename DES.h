@@ -19,6 +19,8 @@ public:
 	DES(uint64_t data,uint64_t key);
 	uint64_t Encrypt();
 	uint64_t Decrypt();
+	enum Mode { encrypt, decrypt };
+
 private:
 	void Initial_Permutations();
 	void Final_Permutations();
